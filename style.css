@@ -1,0 +1,249 @@
+body{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+    /overflow: hidden;/
+}
+
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px;
+}
+header ul{
+    list-style: none;
+    display: flex;
+}
+header ul li{
+    margin: 0 30px;
+}
+
+
+section{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.first-section img{
+    width: 100%;
+}
+.first-section form{
+    border-radius: 3px;
+}
+.first-section button {
+    background-color: hsl(224, 93%, 58%);
+    border: 0;
+    color: white;
+    padding: 15px 60px;
+    border-radius: 3px;
+    margin-left: 10px;
+    vertical-align: middle;
+    font-size: 1.25rem;
+}
+
+
+.second-section{
+    background: url("/fylo-landing-page-with-two-column-layout-master/images/bg-curve-desktop.svg");
+    background-repeat: none;
+    background-position: center;
+    background-size: cover;
+}
+
+.third-section{
+    background-color: hsl(238, 22%, 44%);
+    color: #fff;
+    padding: 150px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.third-section button{
+    background: hsl(224, 93%, 58%);
+    border: 1px solid transparent;
+    border-radius: 4px;
+    padding: 2% 7%;
+    vertical-align: middle;
+    font-size: 1.25rem;
+}
+.third-section input{
+    display: inline-block;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 5%;
+}
+.third-section p{
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    unicode-bidi: isolate;
+}
+.third-section h1{
+   font-family: 'Raleway';
+    margin-top: 30px;
+    font-size: 53px;
+    margin-bottom: 10px;
+    color: hsl(0, 0%, 98%); 
+}
+
+footer{
+    background-color: hsl(243, 87%, 12%);
+    padding: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+footer div{
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+}
+footer div li{
+    margin: 15px 0;
+}
+.footer-image{
+    margin:0 40px;
+    filter: brightness(0) invert(1);
+}
+.icons{
+    display: flex;
+}
+.social-menu{
+    margin: 0 10px;
+}
+
+.attribution {
+    font-size: 14px;
+    text-align: center;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%)
+}
+
+
+ul {
+    list-style: none;
+}
+.email {
+    width: 40%;
+    border: 1px solid hsl(243, 87%, 12%);
+    border-radius: 4px;
+    padding: 12px;
+    margin-right: 3%;
+    font-size: 1.05rem;
+}
+
+.container {
+    max-width: 600px;
+    margin: 20px;
+    margin-bottom: 2rem
+}
+
+.card {
+    border-radius: 20px;
+    text-align: left;
+    margin: 0 1.5em;
+    width: 80%;
+    background-color: #fff;
+    color: hsl(243, 87%, 12%);
+    margin-top: 5%;
+    padding: 5%;
+    box-shadow: 0 0 15px 2px hsl(0, 0%, 75%);
+}
+
+.bold {
+    font-weight: bold;
+}
+
+#card-avatar {
+    float: left;
+    width: 15%;
+    border-radius: 50%;
+    padding: 5%;
+    margin-top: -25px;
+}
+
+.second-section_image {
+    width: 100%;
+}
+
+#image_linkarrow {
+    color: hsl(170, 45%, 43%);
+    text-decoration: underline;
+    font-size: 1.25rem
+}
+
+h1 {
+    font-family: 'Raleway';
+    margin-top: 30px;
+    font-size: 53px;
+    margin-bottom: 10px;
+    color: hsl(243, 87%, 12%);
+}
+
+p {
+    font-size: 18px;
+}
+
+.container p{
+   color: hsl(238, 22%, 44%);
+}
+
+@media screen and (max-width: 600px){
+    body{
+        width: 100%;
+        text-align: center;
+        
+    }
+    header img{
+        width: 100px;
+    }
+    .first-section{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .second-section{
+        display: flex;
+        flex-direction: column-reverse;
+        margin-top: 50px;
+        background: url("./images/bg-curve-mobile.svg");
+        background-repeat: none;
+        background-position: center;
+        background-size: cover;
+    }
+    .third-section{
+        display: flex;
+        flex-direction: column;
+    }
+    .third-section h1, p{
+        margin-top: 50px;
+    }
+    .third-section button{
+        width: 300px
+    }
+    footer div{
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+    }
+    footer img{
+        display: flex;
+        justify-content: left;
+    }
+    h1{
+        font-size: 30px;
+    }
+    .first-section input{
+        width: 280px;
+        margin-bottom: 10px;
+        margin-left: 11px;
+    }
+    .first-section button{
+        width: 300px;
+        margin-left: 0;
+    }    
+}
